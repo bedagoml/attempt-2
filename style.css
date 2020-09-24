@@ -1,69 +1,411 @@
-body{
-   margin: 0px;
-   padding: 0px;
-   background-color: silver;
+
+/*what we do css*/
+.grid{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+
 }
-.folio-home{
-    float: right;
-text-decoration: none;
+@media  only screen and (max-width: 700px) {
+    .cont-3 .cont-7, .cont-2, .cont-6, .cont-10 {
+     display: none;
+    }   
 }
 
-.folio-title{
+
+@media  only screen and (max-width: 500px) {
+    .grid {
+    grid-template-columns: 1fr;
+    }  
+}    
+@media  only screen and (max-width: 320px) {
+    .grid {
+    grid-template-columns: 1fr;
+    }  
+}       
+@media  only screen and (max-width: 700px) {
+    .grid {
+    grid-template-columns: 1fr;
+    }  
+}       
+
+
+   
+.cont-1{
+    background-color: rgb(167, 116, 167);
+  padding-left: 40px;
+  padding-right: 30px;
+  text-align: center;
+  
+}
+.text1{
+    font-size: 30px;
+}
+.text2{
+    font-size: 22px;
     text-align: center;
-    font-size: 25px;
+    overflow-wrap: break-word;
 }
-.box-A{
+.text3{
+    font-size: 22px;
+    text-align: center;   
+}
+.text4{
+    font-size: 30px;
+    text-align: center;
+}
+.text5{
+    font-size: 30px;
+    text-align: center;
+}
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    padding-left: 15px;
- text-align: center;
- word-wrap: break-word;
+.cont-2{
+    background-color: thistle;
+overflow: hidden;
 }
-.box-B{
+  
+
+.cont-3{
+    background-color:thistle;
+
+}
+.cont-4{
+    background-color: rgb(167, 116, 167);
+
+
     
+}
+.cont-5{
+    background-color: rgb(167, 116, 167);
+    overflow-wrap: break-word;
+    text-align: center;
+    
+}
+.cont-6{
+    background-color: thistle;
+   
+   
+}
+.cont-7{
+    background-color: thistle;
+
+}
+.cont-8{
+    background-color: rgb(167, 116, 167);
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.cont-9{
+    background-color: rgb(167, 116, 167);
+    
+    overflow-wrap: break-word;
+}
+.cont-10{
+    background-color: thistle;
+
+}
+
+.listings{
+   position: relative;
+
+}
+.img-2{
+   
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    
+    }
+    .img-1{
+   
+        padding-left: 0px;
+        width: 100%;
+        height: 100%;
+        
+        }
+        .img-3{
+   
+            padding-left: 0px;
+            width: 100%;
+            height: 100%;
+            
+            }
+            .img-4{
+   
+                padding-left: 0px;
+                width: 100%;
+                height: 100%;
+                
+                }
+                .img-5{
+   
+                    padding-left: 0px;
+                    width: 100%;
+                   height: 100%;
+                    overflow: auto;
+                   object-position: center;
+                    
+                    }
+
+    
+/*home css*/
+
+
+.nav-wrapper{
+   width: 117px;
+   margin: auto;
+    
+}
+
+.nav-area{
+   display: flex;
+    list-style: none;
+    margin-top: 30px;
+
+}
+.nav-area li{
+    display: inline-block;
+
+}
+.nav-area li a{
+    color: rgb(18, 59, 150);
+    text-decoration: none;
+    padding:10px 20px;
+    font-family: serif;
+    font-size: 20px;
+
+}
+.nav-wrapper:hover{
+    border-bottom: lightcoral;
+}
+.nav-area li a :hover{
+    background:forestgreen;
+
+}
+.welcome-text{
+    position: absolute;
+   width: 600px; 
+   height: 300px;
+   margin: 20% 30%;
+   text-align: center;
+
+}
+.welcome-text h1{
+   text-align: center;
+   color: indigo;
+   font-size: 60px;
+
+}
+/*about us css*/
+
+body{
+   margin: 0px; 
+   padding: 0px;
+  
+}
+.about-container{
+    display: flex;
+    flex-flow: wrap;
+    margin-top:0px ;
+}
+.header-portfolio{
+    margin: 0px;
+    padding: 0px;
+}
+.text-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    word-wrap: break-word;
+
+  
+}
+
+.space-1{
+    width: 500px;
+    
+}
+.space-2{
+    width: 50%;
+    padding-left:30px ;
+}
+
+
+@media  only screen and (max-width: 1000px) {
+    .space-1, .space-2 {
+     width: 100%;
+     flex-direction: column;
+     padding: 30px 50px;
+    }
+    } 
+    @media  only screen and (max-width: 700px) {
+        .space-1, .space-2 {
+         width: 100%;
+        } 
+          
+    } 
+
+@media  only screen and (max-width: 620px) {
+    .space-1, .space-2 {
+     width: 100%;
+    } 
+      
+} 
+@media  only screen and (max-width: 320px) {
+    .space-1, .space-2 {
+     width: 100%;
+    } 
+      
+} 
+
+.header-portfolio{ 
+background-color:silver; 
+
+font-size: 25px;
+text-align: center;
+
+}
+
+/*moreabout css*/
+body{
+    background-color:  rgb(197, 188, 187);
+    margin: 0px;
+    padding: 0px;
+    line-height:1.6 ;
+    
+}
+.text-wrapper{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    padding-left: 70px;
-    text-align: center;
+    
+    justify-content: center;
+}
+
+    #showcase{
+       background-image: url(../neonbrand.jpg.jpg); 
+       background-size: cover;
+       background-position: center;
+       height: 150vh;
+    }
+    /*footer section*/
+    home.body{
+        height: 100vh;
+    }
+   
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+#footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%; 
+    background: rgb(87, 87, 121);
+   
+}
+.inside-footer{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+}
+.section-1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    width: 25%;
+    word-wrap: break-word;
+    
+    
+    
+}
+.section-2{
+
+    width: 25%;
+  word-wrap: break-word;
+    
+}
+.section-3{
+    width: 25%;
+   word-wrap: break-word;
+}
+.section-4{
+    width: 25%;
+    word-wrap: break-word;
+}
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1000px) {
+    .inside-footer{
+     padding: 30px 50px;
+    }
+    @media screen and (max-width:700px){
+    .inside-footer {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:1000px) {
+  .section-1, .section-2, .section-3, .section-4{
+      width: 100%;
+  }  
+    
+}
+@media screen and (max-width:700px) {
+    .section-1, .section-2, .section-3, .section-4{
+        width: 100%;
+    }  
+      
+  }
+  @media screen and (max-width:620px) {
+    .section-1, .section-2, .section-3, .section-4{
+        width: 100%;
+    }  
+      
+  }
+  @media screen and (max-width:320px) {
+    .section-1, .section-2, .section-3, .section-4{
+        width: 100%;
+    }  
+      
+  }
+
+
+/*about home*/
+.button-about{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/*about more*/
+.button-more{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/*about services*/
+.button-services{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/*about portfolio*/
+.button-portfolio{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+/*carousel*/
+.carousel-item .H5{
+    color: blueviolet;
 
 }
-.box-B ul{
-    color: rgb(74, 100, 126);
-}
-@media screen and (max-width:1000px){
-    .content{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-       
-    }
-}
-@media screen and (max-width:700px){
-    .content{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-}
-@media screen and (max-width:620px){
-    .content{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        
-    }
-}
-@media screen and (max-width:320px){
-    .content{
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        
-    }
-}
-@media screen and (max-width:1000px){
-    .box-A{
-        padding-left: 60px;
-    }
+/*copy rights*/
+.rights{
+    padding-left: 40px;
+    color:whitesmoke;
+    background-color:rgba(0, 0, 0, 0.514);
+   
+    padding-top: 10px;
 }
